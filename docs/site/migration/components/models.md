@@ -14,17 +14,18 @@ LoopBack 4.
 
 ## Import LoopBack 3 models
 
-The first step step is to import LoopBack 3 model definitions into your LoopBack
-4 component. This will convert LB3 model JSON files into LB4 TypeScript classes,
+The first step is to import LoopBack 3 model definitions into your LoopBack 4
+component. This will convert LB3 model JSON files into LB4 TypeScript classes,
 as explained in
 [Import Model definition](../models/core.md#import-model-definition) and
 [Importing models from LoopBack 3 projects](../../Importing-LB3-models.md).
 
 1. Create a small LB3 app that is using your component.
 
-2. In your LB4 extension project, run `lb4 import-lb3-models` to import model(s)
-   contributed by the component from the LB3 app. Change the base class of the
-   imported model from `Entity` to `Model` if needed.
+2. In your LB4 extension project, run `lb4 import-lb3-models <path-to-lb3-app>`
+   to import model(s) contributed by the component from the LB3 app you created
+   in the previous step. Change the base class of the imported model(s) from
+   `Entity` to `Model` if needed.
 
 ## Migrate behavior-less models
 
